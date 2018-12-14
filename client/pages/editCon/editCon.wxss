@@ -1,0 +1,124 @@
+.body{
+  
+  
+  width: 800rpx;
+  height: 1252rpx;
+}
+.head{
+  border: 1px #d0d0d0 solid;
+  margin-top: 100rpx;
+  box-shadow:  #ECFFFF 0rpx 30rpx 1000rpx 1000rpx;
+  margin-left: 60rpx;
+  width: 80%;
+  height: 80%;
+  padding-top: 50rpx;
+  background: white;
+  text-align: center;
+}
+.images{
+  margin-top: -160rpx;
+  width: 300rpx;
+  transform: scale(0.7)
+}
+.title{
+  margin-top: -50rpx;
+}
+.userCon{
+  margin-top: 50rpx;
+  clear: both;
+}
+.foot{
+  margin-top: 75%;
+  text-align: center;
+  
+}
+.collect{
+  padding-top: 30rpx;
+  width: 230rpx;
+  height: 80rpx;
+  border: 1px #d0d0d0 solid;
+  float: left;
+  margin-left: 60rpx;
+}
+.writerCon{
+  padding-top: 30rpx;
+  width: 230rpx;
+  height: 80rpx;
+  border: 1px #d0d0d0 solid;
+  margin-left: 360rpx;
+  position: absolute;
+  
+}
+
+
+.comment-btn {
+  margin: 34rpx auto;
+  width: 250rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background: #ECFFFF;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+  color: #34373D;
+}
+
+.comment-btn.dis {
+  color: rgba(52, 55, 61, 0.5);
+}
+.top{
+  margin-top: 70rpx; 
+  position: relative;
+}
+.userImage{
+  width: 50rpx;
+  border-radius: 25rpx;
+  height: 70rpx;
+  margin-top: 5rpx;
+  float: left;
+  margin-left: 150rpx;
+}
+.userName{
+  float: right;
+  margin-right: 150rpx;
+  clear: both;
+  margin-top: -80rpx;
+  position: relative;
+}
+
+.userContent{
+  word-break:break-all;
+  white-space:normal;
+  width: 400rpx;
+  float: left;
+  position: relative;
+  margin-left: 130rpx;
+}
+.re-edit{
+  border: 1px #d0d0d0 solid;
+  margin-left: 50rpx;
+  clear: both;
+  margin-top: 360rpx;
+  float: left;
+}
+.release-film{
+  border: 1px #d0d0d0 solid;
+  margin-right: 50rpx;
+  margin-top: 360rpx;
+  float: right;
+}
+.startRecord{
+  position: relative;
+  
+  margin-top: 50rpx;
+  
+}
+.overRecord{
+  position: relative;
+  
+}
+.assessCon{
+  
+  margin-top: 50rpx;
+  height: 100rpx;
+}

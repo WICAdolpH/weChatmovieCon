@@ -1,0 +1,13 @@
+
+<view class='movie' >
+  <view wx:for="{{movieList}}" class='body' data-hi="{{item.id}}" bindtap='onTapDetail'>
+  <image src="{{item.image}}" class='images'></image>
+
+  <view class='content'>
+    <view class='title'>{{item.title}}</view>
+    <view class='category'>类型：{{item.category}}</view>
+  </view>
+  
+
+  </view>
+</view>

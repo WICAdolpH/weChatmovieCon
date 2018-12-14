@@ -1,0 +1,30 @@
+.movie{
+ 
+ background: rgb(240, 228, 213);
+ text-align: center;
+}
+.body{
+  padding-top: 50rpx;
+  margin-left: 80rpx;
+  width: 600rpx;
+  height: 440rpx;
+  
+}
+.content{
+  height: 440rpx;
+  background: white;
+}
+.title{
+  text-align: center;
+  padding-top: 30rpx;
+}
+.category{
+  text-align: center;
+  padding-top: 80rpx;
+  font-size: 30rpx;
+}
+.images{
+  clear: both;
+  width: 300rpx;
+  float: left;
+}

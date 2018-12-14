@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/detail/detail",
+    "pages/hotMovie/hotMovie",
+    "pages/movieDetail1/movieDetail1",
+    "pages/editCon/editCon",
+    "pages/login/login",
+    "pages/filmPreview/filmPreview",
+    "pages/filmRevList/filmRevList",
+    "pages/editRecord/editRecord"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ececee",
+    "navigationBarTitleText": "商城首页",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  }
+}

@@ -1,0 +1,57 @@
+.line{
+  clear: both;
+  width:800px;
+  height:1px;
+  margin:0px auto;
+  padding:0px;
+  background-color:rgb(189, 195, 197);
+  overflow:hidden;
+  position: relative;
+  margin-top: 50rpxl
+}
+.head{
+  
+  box-shadow:  #ECFFFF 0rpx 30rpx 1000rpx 1000rpx;
+  
+}
+.body{
+  margin-top: 100rpx;
+  width: 800rpx;
+  height: 300rpx;
+  position: relative;
+}
+.userImage{
+  
+  margin-top: 50rpx;
+  margin-left: 80rpx;
+  width: 170rpx;
+  border-radius: 75rpx;
+  height: 150rpx;
+  float: left;
+  
+}
+.userName{
+  margin-left: 50rpx;
+  float: left;
+  margin-top: 100rpx;
+  
+}
+.userComment{
+  position: relative;
+  clear: both;
+  padding-top: 20rpx;
+  margin-left: 100rpx;
+}
+.foot{
+  width: 1000rpx;
+  height: 130rpx;
+  background: white;
+  margin-top: 700rpx;
+  padding-left:40%;
+  padding-top: 30rpx;
+}
+.record{
+  position: relative;
+  margin-top: 30rpx;
+  margin-right: 50rpx;
+}

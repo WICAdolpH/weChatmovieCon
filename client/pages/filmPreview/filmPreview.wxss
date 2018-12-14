@@ -1,0 +1,67 @@
+.body{
+  
+  
+  width: 800rpx;
+  height: 1252rpx;
+}
+.head{
+  border: 1px #d0d0d0 solid;
+  margin-top: 100rpx;
+  box-shadow:  #ECFFFF 0rpx 30rpx 1000rpx 1000rpx;
+  margin-left: 60rpx;
+  width: 80%;
+  height: 80%;
+  padding-top: 50rpx;
+  
+  text-align: center;
+}
+.images{
+  margin-top: -160rpx;
+  width: 300rpx;
+  transform: scale(0.7)
+}
+.title{
+  margin-top: -50rpx;
+}
+.userImage{
+  width: 50rpx;
+  border-radius: 25rpx;
+  height: 70rpx;
+  margin-top: 40rpx;
+  float: left;
+  margin-left: 150rpx;
+}
+.userCon{
+  margin-top: 50rpx;
+  
+  margin-right: 150rpx;
+}
+.content{
+  margin-top: 30rpx;
+  position: relative;
+  
+}
+.foot{
+  clear: both;
+  margin-top: 65%;
+  text-align: center;
+  
+}
+.collect{
+  
+  padding-top: 30rpx;
+  width: 230rpx;
+  height: 80rpx;
+  border: 1px #d0d0d0 solid;
+  float: left;
+  margin-left: 60rpx;
+}
+.writerCon{
+  padding-top: 30rpx;
+  width: 230rpx;
+  height: 80rpx;
+  border: 1px #d0d0d0 solid;
+  margin-left: 360rpx;
+  position: absolute;
+  
+}

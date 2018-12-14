@@ -1,0 +1,17 @@
+<view class='head'>
+  <view class='body' wx:for='{{userCom}}'>
+    <image src='{{item.userImage}}' class='userImage'></image>
+    <view class='userName' bindtap='toDetail' data-content="{{item.content}}" data-record="{{item.record}}" data-name="{{item.name}}" data-imageSrc="{{item.userImage}}" data-openId="{{item.openId}}">{{item.name}}</view>
+    <view class='userComment' wx:if="{{item.content}}">{{item.content}}</view>
+    <view wx:if="{{item.record}}" >
+    <button bindtap='playRecord' type='primary' data-record="{{item.record}}" class='userComment' data-content="{{item.content}}" data-record="{{item.record}}" data-name="{{item.name}}" data-imageSrc="{{item.userImage}}" data-openId="{{item.openId}}">播放录音</button>
+    </view>
+    
+
+  </view>
+  <view class='line'></view>  
+</view>
+
+<view class='foot'>
+  <view class='toHome' bindtap="toHome">回到首页</view>
+</view>

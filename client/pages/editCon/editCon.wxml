@@ -1,0 +1,36 @@
+
+<view class='body'>
+    <view class='head'>
+      <view wx:for="{{movieList}}">
+          <image src='{{item.imageUrl}}' class='images'></image>
+          <view class='title'>{{item.title}}</view>
+          <view wx:if="{{editFinsh == 0}}">
+          <textarea class="assessCon" placeholder='请填写你的评价' maxlength='255'                             placeholder-class='comment-placeholder' bindinput='onInput' wx:if="{{statusContent}}"></textarea>
+          
+          <view class="comment-btn {{!status ? 'dis' : ''}}" bindtap='addComment' data-openId='{{userInfo.openId}}' data-movieId="{{movieId}}">完成</view>
+          </view>
+
+          <view wx:else class='top'>
+            <image src='{{userInfo.userImage}}' class='userImage'></image>
+            <view class='userName'>{{userInfo.name}}的评论</view>
+            
+            <view class='userContent' wx:if="{{statusContent}}">"　{{content}}</view>
+            
+            
+            <view class='re-edit' bindtap='reEdit'>重新编辑</view>
+            <view class='release-film' bindtap='releaseFilm'>发布影评</view>
+            
+          </view>
+
+      </view>
+          
+
+      
+
+    </view>
+    
+</view>
+
+    
+    
+

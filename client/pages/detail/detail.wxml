@@ -1,0 +1,16 @@
+<view class='body'>
+  <view wx:for="{{movieList}}" >
+    <image src="{{item.imageUrl}}" class='images'></image>
+    <view class='title'>{{item.title}}</view>
+    <view class='description'>{{item.description}}</view>
+  </view>
+</view>
+<view class='foot'>
+  <view class='seeCom' bindtap='seeCom'>查看影评</view>
+  <view class='addCom' bindtap='showActionSheet'>添加影评</view>
+  <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+  <action-sheet-item bindtap="actionSheetItem" data-name="name1" data-value='我是第1条数据' data-id="{{item.id}}" >文字</action-sheet-item>
+  <action-sheet-item bindtap="actionSheetItem" data-name="name2" data-value='我是第2条数据' data-id="{{item.id}}" >音频</action-sheet-item>
+  <action-sheet-cancel bindtap="actionSheetItem" data-name="cancel" data-value='我是取消'>取消</action-sheet-cancel>
+</action-sheet>
+</view>

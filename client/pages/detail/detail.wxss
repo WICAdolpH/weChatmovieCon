@@ -1,0 +1,33 @@
+
+.body{
+  text-align: center;
+}
+.images{
+  margin-top: 30rpx;
+  width: 300rpx;
+  
+}
+.title{
+  margin-top: 30rpx;
+}
+.description{
+  margin-left: 120rpx;
+  text-align: center;
+  margin-top: 60rpx;
+  width: 500rpx;
+  height: auto;
+  color: rgb(117, 116, 116);
+}
+.foot{
+  margin-top: 30rpx;
+  position: relative;
+
+}
+.seeCom{
+  float: left;
+  margin-left: 100rpx;
+}
+.addCom{
+  float: right;
+  margin-right: 150rpx;
+}

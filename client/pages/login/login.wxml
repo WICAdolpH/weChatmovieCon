@@ -1,0 +1,59 @@
+<view wx:if="{{!userInfo}}">
+  <button wx:if="{{setStatus==0}}" class='bottom' type='primary' open-type='getUserInfo' bindgetuserinfo='login'>
+  微信登录
+  </button>
+  <button wx:if="{{setStatus==1}}" class='bottom' type='primary' open-type='openSetting' bindopensetting="login">
+  授权登录
+  </button>
+ </view>
+<view wx:else class='bg'> 
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">我的收藏</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">我的评论</view>
+    
+</view>
+<swiper current="{{currentTab}}" duration="300"  bindchange="swiperTab" >
+    <swiper-item ><view >
+      <view class='head-title' >收藏的影评V</view>
+  <view wx:for="{{userInfo}}" class='body'>
+    <view class='bg-1'>
+      <image src='{{item.movieImage}}' class='movieImage'></image>
+      <view class='movieTitle'>{{item.movieTitle}}</view>
+      <view class='content' wx:if="{{item.content}}">{{item.content}}</view>
+       <view class='content' wx:if="{{item.record}}">
+            <button bindtap='playRecord' type='primary' data-record="{{item.record}}"  >播放录音</button>
+        </view>
+
+      <image src='{{item.userImage}}' class='userImage'></image>
+      <view class='userName'>{{item.name}}</view>
+    </view>
+  </view>
+    
+    
+    </view></swiper-item>
+    <swiper-item><view>
+    
+     <view class='head-title' >我的影评V</view>
+  <view wx:for="{{ownContent}}" class='body'>
+    <view class='bg-1'>
+      <image src='{{item.movieImage}}' class='movieImage'></image>
+      <view class='movieTitle'>{{item.movieTitle}}</view>
+      <view class='content' wx:if="{{item.content}}">{{item.content}}</view>
+       <view class='content' wx:if="{{item.record}}">
+            <button bindtap='playRecord' type='primary' data-record="{{item.record}}"  >播放录音</button>
+        </view>
+
+      <image src='{{item.userImage}}' class='userImage'></image>
+      <view class='userName'>{{item.name}}</view>
+    </view>
+  </view>
+    
+    </view></swiper-item>
+    
+</swiper>
+
+
+
+  
+ </view>
+

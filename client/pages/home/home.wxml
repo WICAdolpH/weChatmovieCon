@@ -1,0 +1,20 @@
+<view class='head'>
+<view wx:for="{{movieList}}">
+  <image src='{{item.imageUrl}}' class='images' bindtap='onTapImage' data-hi="{{item.id}}"></image>
+
+  <view class='title-1'>{{item.title}}</view>
+  <view class='user'>
+    <image src='{{userCon.image}}' class='userImage'></image>
+    <view class='title-2' bindtap='onTapMVdetail' data-hi="{{item.id}}" data-openId="{{userCon.openId}}">{{userCon.name}}给你推荐了一部电影</view>
+  </view>  
+</view>
+</view>
+
+
+<view class='footer'>
+<view class='line' ></view>
+  <view class='title-1'  bindtap='onTapHot'>热门　　　　</view> 
+  <view class='title-2' bindtap='onTapLogin'>我的</view>
+</view>
+
+
